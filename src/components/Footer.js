@@ -14,7 +14,7 @@ function Footer() {
         <Col md="4" className="footer-copywright">
           <h3>Powered by {" "}
             <a href="https://www.syersy.com/" style={{ color: "#18D26E", textDecoration: "none" }} target="_blank" rel="noopener noreferrer">
-              SYERSY
+              Syersy
             </a>
           </h3>
         </Col>
