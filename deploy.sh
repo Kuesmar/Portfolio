@@ -2,8 +2,8 @@
 
 # Start deploy process.
 echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USERNAME" --password-stdin 
-docker-compose build -f docker-compose.yml
-docker-compose push -f docker-compose.yml
+docker-compose build
+docker-compose push
 
 # Deploying in stage.
 echo "" >> "$HOME/.ssh/known_hosts"
