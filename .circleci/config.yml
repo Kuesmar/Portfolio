@@ -1,0 +1,17 @@
+version: 2
+jobs:
+  deploy-to-production:
+    machine:
+      image: ubuntu-2204:2022.07.1
+    working_directory: ~/portfolio
+    steps:
+      - checkout
+      - run: bash ./deploy.sh
+workflows:
+  version: 2
+  deploy:
+    jobs:
+      - deploy-to-production:
+          filters:
+            branches:
+              only: release

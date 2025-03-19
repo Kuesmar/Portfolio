@@ -1,0 +1,7 @@
+services:
+  portfolio:
+    build:
+      context: .
+    image: luciano77/portfolio:$CIRCLE_SHA1
+    ports:
+      - "4000:4000"
