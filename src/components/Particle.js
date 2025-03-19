@@ -50,6 +50,6 @@ function Particle() {
       }}
     />
   );
-}
+};
 
 export default Particle;
